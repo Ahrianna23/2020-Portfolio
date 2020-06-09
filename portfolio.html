@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ahri Daniels</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="description" content="Ahri Daniels is a Web Developer based in Central New Jersey with skills ranging from photoshop to front-end web development">
+<meta name="keywords" content="Web Design, Web Developer, Digital Art, Graphic Design, Freelancer Developer, Freelance Web Designer, Freelance 3D Artist, Photoshop, Illustrator, Photo Manipulation Artist, New Jersey">
+<meta name="author" content="Jamell Daniels">
+<meta name="copyright" content="2017">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109019886-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109019886-1');
+</script>
+
+</head>
+<body>
+    <?php include('includes/loader.inc'); ?>
+    <div class="container" id="pdp-page">
+
+        <div class="content portfolio">
+            <header>
+              <a href="index.php"><div class="logo"><img src="images/Ahri-logo-white-rgb.svg"></div></a>
+              <div class="menu-container">
+                <!-- Hamburger Icon
+                  <p id="menu-txt">Menu</p>
+                -->
+                  <div class="menu-icon" id="menu-icon">
+                      <div class="menu-line"></div>
+                      <div class="menu-line"></div>
+                      <div class="menu-line"></div>
+                  </div>
+                </div>
+                <div class="navbar">
+                    <a href="index.html" class="links"><div id="nav1">Hello!</div></a>
+                    <a href="about.html" class="links"><div id="nav2">About</div></a>
+                    <a href="mailto:ahridaniels405@gmail.com" class="links"><div id="nav3">Contact</div></a>
+                </div>
+
+        </header>
+            <div class="showcase-container">
+            <div class="showcase-arrow sa1">
+              <p class="left"><</p>
+              <p class="arrow-text">Previous Project</p>
+            </div>
+                <div class="showcase-content">
+                    <h1></h1>
+                    <h2 id="role">Role in Project <br /> Client</h2>
+                    <img id="scroll-indicator" src="images/scroll-icon.svg">
+                    <div class="showcase-background slanted-left"></div>
+                    <!-- <h2>Description</h2> -->
+                    <p> Some Content inserted with PHP</p>
+
+                    <a href = " " target="_blank" class="link"><div class="showcase-cta"> View Project </div></a>
+                </div>
+                <div class="showcase-arrow sa2">
+                <p class="right">></p>
+                <p class="arrow-text-right">Next Project</p>
+                </div>
+
+            </div>
+            <?php include('includes/footer.inc')?>
+
+      </div>
+    </div> <!-- end container -->
+    <script type="text/javascript" src="portfolio.js"> </script>
+</body>
+<script src="three.r95.min.js"></script>
+<script src="vanta.waves.min.js"></script>
+<script>
+VANTA.WAVES({
+  el: "#pdp-page",
+  mouseControls: true,
+  touchControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x0,
+  shininess: 3.00,
+  waveSpeed: 0.55,
+  zoom: 1.53
+})
+
+</script>
+</html>

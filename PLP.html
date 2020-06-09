@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ahri Daniels</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+<meta name="description" content="Ahri Daniels is a Web Developer based in Central New Jersey with skills ranging from photoshop to front-end web development">
+
+<meta name="keywords" content="Web Design, Web Developer, Digital Art, Graphic Design, Freelancer Developer, Freelance Web Designer, Freelance 3D Artist, Photoshop, Illustrator, Photo Manipulation Artist, New Jersey">
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<meta name="author" content="Ahrianna Daniels">
+<meta name="copyright" content="2017">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="ahriannaApp.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109019886-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109019886-1');
+</script>
+<style>
+    #page {width: 100%; padding:5% background:blue}
+</style>
+</head>
+<body>
+        <div class="container" id="plp-page">
+           <div class="content index">
+                <header>
+                    <a href="index.php"><div class="logo"><img src="images/Ahri-logo-white-rgb.svg"></div></a>
+                    <div class="menu-container">
+                      <!-- Hamburger Icon
+                        <p id="menu-txt">Menu</p>
+                      -->
+                        <div class="menu-icon" id="menu-icon">
+                            <div class="menu-line"></div>
+                            <div class="menu-line"></div>
+                            <div class="menu-line"></div>
+                        </div>
+
+                    </div> <!-- End Menu Container -->
+
+                    <div class="navbar">
+                        <a href="index.html" class="links"><div id="nav1">Hello!</div></a>
+                        <a href="about.html" class="links"><div id="nav2">About</div></a>
+                        <a href="mailto:ahridaniels405@gmail.com" class="links"><div id="nav3">Contact</div></a>
+                    </div><!-- End Navbar -->
+
+               </header><!-- End Header -->
+                <h1 id="plp-script">My Work</h1>
+                  <section id="plp-content-container">
+                    <div class="plp-item slanted-left" id="0">
+                        <a href="portfolio.html" class="plp-links">
+                        <img src="images/AhriDaniels-FBHP.png"/></img>
+                        <p class="plp-item-title"> FullBeauty Brands </p>
+                        </a>
+                    </div>
+
+                      <div class="plp-item slanted-right" id="1">
+                          <a href="portfolio.html" class="plp-links">
+                          <img src="images/AhriDaniels-plp-Adrians.jpeg"></img>
+                          <p class="plp-item-title"> Adrian's Caterer's</p>
+                          </a>
+                      </div>
+                      <div class="plp-item slanted-left" id="2">
+                          <a href="portfolio.html" class="plp-links">
+                          <img src="images/AhriDaniels-InspiringNJ.png"/></img>
+                          <p class="plp-item-title"> Inspiring NJ</p>
+                          <div class="plp-overlay"></div>
+                          </a>
+                      </div>
+
+                      <div class="plp-item slanted-right" id="3">
+                          <a href="portfolio.html" class="plp-links">
+                          <img src="images/AhriDaniels-FeaturesLP.png"/></img>
+                          <p class="plp-item-title"> FrontEnd Mentor </p>
+                          </a>
+                      </div>
+                  </section>
+                <div class="bg"></div>
+
+               <footer> <small> &copy; <?php echo date("Y"); ?> Copyright Ahrianna Daniels</small> </footer>
+
+            </div><!-- End Content Container -->
+
+        </div><!-- End Main Container -->
+
+        <script type="text/javascript" src="portfolio.js"></script>
+    </body>
+    <script src="three.r95.min.js"></script>
+    <script src="vanta.waves.min.js"></script>
+    <script>
+    VANTA.WAVES({
+      el: "#plp-page",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0,
+      shininess: 3.00,
+      waveSpeed: 0.55,
+      zoom: 1.53
+    })
+  localStorage.test = 0;
+
+    var plplinks = document.getElementsByClassName('plp-item');
+    for (var i = 0; i < plplinks.length; i++) {
+      plplinks[i].addEventListener('click', function() {
+        localStorage.test = this.id;
+        alert(localStorage.test);
+      });
+    }
+    //   }); // Ends the addEventListener function
+    // } // End of for loop
+    </script>
+</html>
