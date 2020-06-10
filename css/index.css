@@ -111,6 +111,7 @@ a { text-decoration: none; }
                 background-color: none;
                 position: relative;
                 z-index: +999;
+                transition: all ease 300ms;
             }
             .logo {
                 width: 50px;

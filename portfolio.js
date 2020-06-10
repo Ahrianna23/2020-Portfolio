@@ -32,7 +32,7 @@
     image6.src="images/AhriDaniels-InspiringNJ.png";
 
     var expanded = false;
-    var menuIcon = document.getElementById("menu-icon");
+    var menuIcon = document.getElementById("content");
     $('#menu-icon').click(function() {
         var menuLines = document.getElementsByClassName('menu-line');
         for (var i = 0; i < menuLines.length; i++){
@@ -46,9 +46,9 @@
             menuLines[i].classList.toggle("menuLineTwo");
           }
         }
-        menuIcon.classList.add("menu-icon-transform");
+        menuIcon.classList.add("content-transform");
         function switchMenu() {
-          menuIcon.classList.remove("menu-icon-transform");
+          menuIcon.classList.remove("content-transform");
         }
         $('.navbar').slideDown();
         setTimeout(checkStatus, 200);
