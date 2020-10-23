@@ -2,96 +2,367 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Ahri Daniels</title>
-<link rel="stylesheet" type="text/css" href="css/index.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+<title>Ahrianna Daniels</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<link rel="stylesheet" href="css/index.css" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&display=swap" rel="stylesheet">
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-<meta name="description" content="Ahri Daniels is a Web Developer based in Central New Jersey with skills ranging from photoshop to front-end web development">
-<meta name="keywords" content="Web Design, Web Developer, Digital Art, Graphic Design, Freelancer Developer, Freelance Web Designer, Freelance 3D Artist, Photoshop, Illustrator, Photo Manipulation Artist, New Jersey">
-<meta name="author" content="Jamell Daniels">
-<meta name="copyright" content="2017">
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109019886-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-109019886-1');
-</script>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Ahrianna Daniels">
+<meta name="copyright" content="2020">
 
 </head>
 <body>
-    <?php include('includes/loader.inc'); ?>
-    <div class="container" id="pdp-page">
-
-        <div class="content portfolio" id="content">
-            <header>
-              <a href="index.php"><div class="logo"><img src="images/Ahri-logo-white-rgb.svg"></div></a>
-              <div class="menu-container">
-                <!-- Hamburger Icon
-                  <p id="menu-txt">Menu</p>
-                -->
-                  <div class="menu-icon" id="menu-icon">
-                      <div class="menu-line"></div>
-                      <div class="menu-line"></div>
-                      <div class="menu-line"></div>
-                  </div>
-                </div>
-                <div class="navbar">
-                    <a href="index.html" class="links"><div id="nav1">Hello!</div></a>
-                    <a href="about.html" class="links"><div id="nav2">About</div></a>
-                    <a href="mailto:ahridaniels405@gmail.com" class="links"><div id="nav3">Contact</div></a>
-                </div>
-
-        </header>
-            <div class="showcase-container">
-            <div class="showcase-arrow sa1">
-              <p class="left"><</p>
-              <p class="arrow-text">Previous Project</p>
+  <!-- Main Container -->
+  <div class="container main portfolio-main">
+    <header id="content">
+        <a href="index.html"><div class="logo"><img src="images/Ahri-logo-icon-black-rgb.svg"></div></a>
+        <div class="menu-container">
+          <!-- Hamburger Icon
+            <p id="menu-txt">Menu</p>
+          -->
+            <div class="menu-icon" id="menu-icon">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
             </div>
-                <div class="showcase-content">
-                    <h1></h1>
-                    <h2 id="role">Role in Project <br /> Client</h2>
-                    <img id="scroll-indicator" src="images/scroll-icon.svg">
-                    <div class="showcase-background slanted-left"></div>
-                    <!-- <h2>Description</h2> -->
-                    <p> Some Content inserted with PHP</p>
 
-                    <a href = " " target="_blank" class="link"><div class="showcase-cta"> View Project </div></a>
-                </div>
-                <div class="showcase-arrow sa2">
-                <p class="right">></p>
-                <p class="arrow-text-right">Next Project</p>
-                </div>
+        </div> <!-- End Menu Container -->
 
-            </div>
-            <?php include('includes/footer.inc')?>
+        <div class="navbar">
+            <p class="nav-message"> Lets Build Together, How can I help?</p>
+            <a href="index.html#page" class="links" id="first-nav"><div id="nav1">Hello!</div></a>
+            <a href="index.html#portfolio" class="links"><div id="nav2">About Ahri</div></a>
+            <a href="index.html#contact" class="links"><div id="nav3">Contact</div></a>
 
+        </div><!-- End Navbar -->
+
+   </header><!-- End Header -->
+    <!-- Portfolio Section -->
+    <div class="section PDP" id="portfolio">
+    <div class="Portfolio-Navigation-Container">
+      <div class="showcase-arrow sa1">
+        <p class="left"> < </p>
+        <p class="arrow-text">Previous Project</p>
       </div>
-    </div> <!-- end container -->
-    <script type="text/javascript" src="portfolio.js"> </script>
-</body>
+      <div class="showcase-arrow sa2">
+        <p class="right"> > </p>
+        <p class="arrow-text-right">Next Project</p>
+      </div>
+    </div> <!-- End of Portfolio Naviagtion Container -->
+
+    <div class="Portfolio-Content">
+      <h1>Test</h1>
+      <h2 id="role">Role in Project <br /> Client</h2>
+      <img id="scroll-indicator" src="images/scroll-icon.svg">
+      <div class="Portfolio-background slanted-left"></div>
+      <!-- <h2>Description</h2> -->
+      <p> Some Content inserted with PHP</p>
+
+      <a href=" " target="_blank" class="link"> <div class="Portfolio-CTA"> View Project </div> </a>
+    </div>
+  </div> <!-- Ends the Portfolio Section -->
+
+  </div><!-- End of Main Container -->
+<script>
+      //Fade Effect//
+      if($('.container').css("display", "none")){   $('.container').fadeIn(1000); };
+      $('.hero-section-divider h1').css('animation', 'slideInFadeLeft ease 500ms 800ms forwards');
+      $('.hero-section-divider p').css('animation', 'slideInFadeRight ease 1000ms 1000ms forwards');
+      $('.cta-container').css('animation', 'slideUpInFade ease 1500ms 1700ms forwards');
+
+      $('.cta-container').fadeIn(3000);
+
+      var expanded = false;
+      var header = document.getElementById("content");
+      $('#menu-icon').click(function() {
+          var menuLines = document.getElementsByClassName('menu-line');
+          for (var i = 0; i < menuLines.length; i++){
+            if (i === 0) {
+              menuLines[i].classList.toggle("menuLineOne");
+            }
+            else if (i === 2){
+              menuLines[i].classList.toggle("menuLineThree");
+            }
+            else if (i === 1) {
+              menuLines[i].classList.toggle("menuLineTwo");
+            }
+          }
+          header.classList.add("content-transform");
+          function switchMenu() {
+            header.classList.remove("content-transform");
+          }
+          $('.menu-line').css('background', '#fff');
+          $('.navbar').slideDown();
+          setTimeout(checkStatus, 200);
+          function checkStatus(){
+              if(expanded === false) {
+                  expand();
+              }
+              else {
+                  $('#nav1').css('animation', 'collapse ease 200ms forwards');
+                  $('#nav2').css('animation', 'collapse ease 200ms forwards');
+                  $('#nav3').css('animation', 'collapse ease 200ms forwards');
+                  setTimeout(collapse, 300);
+                  function collapse() {
+                      $('.navbar').slideUp();
+                      document.getElementById('nav1').style.animation = '';
+                      document.getElementById('nav2').style.animation = '';
+                      document.getElementById('nav3').style.animation = '';
+                      setTimeout(switchMenu, 300);
+                  }
+
+                  expanded = false;
+              }//end else
+          }//End check status
+       });
+          var i = 0,
+          loopXTimes = 4;
+
+      function expand() {
+
+          var navName = '#nav';
+          var delay = 200;
+
+          i++;
+          if(i < loopXTimes){
+              delay += 100;
+              navName += i;
+                  $(navName).css('animation', 'expand ease 500ms forwards');
+                  //$(navName).css('animation-delay', delay +'ms');
+                  setTimeout(expand, 100);
+
+          } else {i = 0;}
+          expanded = true;
+      };
+
+      $('.plp-links').click(function() {
+        $('.portfolio-card-overlay').css('opacity', '0');
+        $('#p1').css('animation', 'slideOutFadeLeft ease 1000ms 100ms forwards');
+        $('#p2').css('animation', 'slideOutFadeRight ease 1000ms 100ms forwards');
+        $('#p3').css('animation', 'slideOutFadeLeft ease 1000ms 100ms forwards');
+        $('#p4').css('animation', 'slideOutFadeRight ease 1000ms 100ms forwards');
+        $('.container').fadeOut(1000);
+        var href = $(this).attr('href');
+        setTimeout(function() {window.location = href}, 1100);
+return false;
+       $('.container').css("display", "none")
+      });
+
+      var plplinks = document.getElementsByClassName('plp-item');
+      for (var i = 0; i < plplinks.length; i++) {
+        plplinks[i].addEventListener('click', function() {
+          localStorage.index = this.id;
+        });
+      }
+
+      var aboutImage = $('.Portfolio-background').css('background-image');
+                      var showcase = [];
+                      var showcaseIndex = 0;
+
+                      showcase.push({
+                          projectTitle: "FullBeauty Brands",
+                          projectRole: "Web Designer",
+                          projectClient: "FullBueaty Prands",
+                          projectDescription: "Working with FullBeauty Brands, I help manage weekly campaigns for more than one of the company ’s many brands (most of which are in the fashion industry). These campaigns are often filled with new landing pages, emails, mobile website updates, and website banner changes that roll out on a weekly basis. As part of a team, I ensure the workflow within departments run smoothly and has fastturnover times.",
+                          projectImg: "images/AhriDaniels-FBHP.png",
+                          projectHref: "https://shop.fullbeauty.com/"
+                      });
+                      showcase.push({
+                          projectTitle: "Adrian's Caterers",
+                          projectRole: "Web Designer & Developer <br />", // <-- <br /> here seems out of place...
+                          rojectClient: "Catering Business Owner",
+                          projectDescription: "Adrian’s Caterers is a project completed with the help of my classmates during our senior year. The project was done for a local business owner (Adrian’s Caterers) and consisted of a business plan, logo redesign, brand redesign, and a fully functioning responsive website. Using Front-End Development techniques I achieved in creating the website and placing top 3 in a senior project showdown. The website was to be interactive and fun, so we included an interactive timeline on the about page. As a final touch to the package I created a website manual for the owner, which can be found <a href='AdriansCaterers_WebsiteManual.pdf' target='_blank' id='loneA'>here</a>. Feel free to check out the website yourself",
+                          projectImg: "images/AhriDaniels-plp-Adrians.jpeg",
+                          projectHref: "http://adrianscaterers.net/"
+                      });
+
+                      showcase.push({
+                          projectTitle: "InspiringNJ",
+                          projectRole: "Front-End Web Developer",
+                          projectClient: "Medical Trasnport Start-up",
+                          projectDescription: "InspiringNJ is a website completed for a client that a team, myself included, completed in 2015. The client requested a website in which users can use the website to schedule the medical transport service they are offering. Along with a website, the clients also requested business cards and a logo. I was tasked with implementing the new feature and building new pages.",
+                          projectImg: "images/AhriDaniels-InspiringNJ.png",
+                          projectHref: "http://inspiringnj.org/"
+                      });
+
+
+                      showcase.push({
+                          projectTitle: "FrontEnd Mentor",
+                          projectRole: "Front End Developer",
+                          projectClient: "Bootcamp Project",
+                          projectDescription: "SuperStarMe is a fictional music auto-tuning mobile application. The concept being that anyone should be able to sing a song to a tune of their favorite song, autotune the recording and/or add effects, and finally sharing their song with the world. It gives music lovers the chance to be their favorite artist and have fun! ",
+                          projectImg: "images/AhriDaniels-FeaturesLP.png",
+                          projectHref: "https://ahrianna23.github.io/FrontEndMentorC-2/"
+
+                      });
+
+                      showcase.push({
+                          projectTitle: "Jazz at Lincoln Center",
+                          projectRole: "Digital Designer",
+                          projectClient: "NJ State Theatre",
+                          projectDescription: "The Jazz at Lincoln center poster is a print design done during an internship I had in the summer of 2014 for the NJ State Theatre. My design process behind the project was to use colors that spoke the culture that powers Jazz music lovers with the combination of shapes.",
+                          projectImg: "images/AhriDaniels-jazz.jpg",
+                          projectHref: "images/AhriDaniels-jazz.jpg"
+                      });
+
+                      showcaseIndex = localStorage.index;
+
+                      var tnIndex = 1;
+
+                      $('.Portfolio-Content h1').html(showcase[showcaseIndex].projectTitle);
+                      $('.Portfolio-Content #role').html(showcase[showcaseIndex].projectRole);
+                      $('.Portfolio-background').css('background-image', 'url('+showcase[showcaseIndex].projectImg);
+                      $('.Portfolio-Content p').html(showcase[showcaseIndex].projectDescription);
+                      $(".Portfolio-Content .link").attr("href", showcase[showcaseIndex].projectHref);
+                      $('#loneA').attr('href', 'AdriansCaterers_WebsiteManual.pdf');
+
+                      $('.sa2').click(function() {
+                          if(showcaseIndex == 4 ) {
+                              showcaseIndex = 0;
+                              $('.Portfolio-Content h1').html(showcase[showcaseIndex].projectTitle);
+                              $('.Portfolio-Content #role').html(showcase[showcaseIndex].projectRole);
+                              $('.Portfolio-Content p').html(showcase[showcaseIndex].projectDescription);
+                              $('.Portfolio-background').css('background-image', 'url('+showcase[showcaseIndex].projectImg);
+                              $(".Portfolio-Content .link").attr("href", showcase[showcaseIndex].projectHref);
+                              $('#loneA').attr('href', 'AdriansCaterers_WebsiteManual.pdf');
+                          }
+                          else {
+                              $('.Portfolio-Content h1').css('opacity', '1');
+                              $('.Portfolio-Content h1').css('animation', 'slideOutFade ease 300ms forwards');
+
+
+                              $('.Portfolio-Content h2').css('opacity', '1');
+                              $('.Portfolio-Content h2').css('animation', 'slideOutFade ease 300ms 200ms forwards');
+
+
+                              $('.Portfolio-Content p').css('opacity', '1');
+                              $('.Portfolio-Content p').css('animation', 'slideOutFade ease 300ms 400ms forwards');
+
+                              $('.Portfolio-Content .Portfolio-CTA').css('opacity', '1');
+                              $('.Portfolio-Content .Portfolio-CTA').css('animation', 'slideOutFade ease 300ms 600ms forwards');
+
+
+
+                              setTimeout(function() {
+                                  showcaseIndex++;
+                                  tnIndex++;
+                                  $('.Portfolio-Content h1').css('animation', 'slideInFade ease 300ms forwards');
+                                  $('.Portfolio-Content h1').html(showcase[showcaseIndex].projectTitle);
+
+                                  $('.Portfolio-Content h2').css('opacity', '0');
+                                  $('.Portfolio-Content #role').html(showcase[showcaseIndex].projectRole);
+                                  $('.Portfolio-Content h2').css('animation', 'slideInFade ease 300ms 200ms forwards');
+
+                                  $('.Portfolio-Content p').css('opacity', '0');
+                                  $('.Portfolio-Content p').html(showcase[showcaseIndex].projectDescription);
+                                  $('.Portfolio-Content p').css('animation', 'slideInFade ease 300ms 400ms forwards');
+
+                                  $('.Portfolio-Content .Portfolio-CTA').css('opacity', '0');
+                                  $(".Portfolio-Content .link").attr("href", showcase[showcaseIndex].projectHref);
+                                  $('#loneA').attr('href', 'AdriansCaterers_WebsiteManual.pdf');
+                                  $('.Portfolio-Content .Portfolio-CTA').css('animation', 'slideInFade ease 300ms 600ms forwards');
+
+                                  $('.Portfolio-background').css('background-image', 'url('+showcase[showcaseIndex].projectImg);
+
+                                  if(tnIndex == 6) {
+                                      tnIndex -= 5;
+                                  }
+                                  else { }
+                                      $('.active').removeClass('active');
+
+                                      $('.thumbnail:nth-child('+tnIndex+')').addClass('active');
+
+                          }, 900)
+
+
+                          }
+
+                      }); // End Right Arrow Clicking Function
+
+                      // Left Arrow Function
+
+                      $('.sa1').click(function() {
+                          if(showcaseIndex == 0 ) {
+                              showcaseIndex = 5;
+                              $('.Portfolio-Content h1').html(showcase[showcaseIndex].projectTitle);
+                              $('.Portfolio-Content #role').html(showcase[showcaseIndex].projectRole);
+                              //$('.showcase-content p').html(showcase[showcaseIndex].projectDescription);
+                              $('.Portfolio-background').css('background-image', 'url('+showcase[showcaseIndex].projectImg);
+                              $(".Portfolio-Content a").attr("href", showcase[showcaseIndex].projectHref);
+                              $('#loneA').attr('href', 'AdriansCaterers_WebsiteManual.pdf');
+                          }
+                          else {
+                              $('.Portfolio-Content h1').css('opacity', '1');
+                              $('.Portfolio-Content h1').css('animation', 'slideOutFade ease 300ms forwards');
+
+
+                              $('.Portfolio-Content h2').css('opacity', '1');
+                              $('.Portfolio-Content h2').css('animation', 'slideOutFade ease 300ms 200ms forwards');
+
+
+                              $('.Portfolio-Content p').css('opacity', '1');
+                              $('.Portfolio-Content p').css('animation', 'slideOutFade ease 300ms 400ms forwards');
+
+                              $('.Portfolio-Content .Portfolio-CTA').css('opacity', '1');
+                              $('.Portfolio-Content .Portfolio-CTA').css('animation', 'slideOutFade ease 300ms 600ms forwards');
+
+
+                              setTimeout(function() {
+                                  showcaseIndex--;
+                                  $('.Portfolio-Content h1').css('animation', 'slideInFade ease 300ms forwards');
+                                  $('.Portfolio-Content h1').html(showcase[showcaseIndex].projectTitle);
+
+                                  $('.Portfolio-Content h2').css('opacity', '0');
+                                  $('.Portfolio-Content #role').html(showcase[showcaseIndex].projectRole);
+                                  $('.Portfolio-Content h2').css('animation', 'slideInFade ease 300ms 400ms forwards');
+
+                                  $('.Portfolio-Content p').css('opacity', '0');
+                                  $('.Portfolio-Content p').html(showcase[showcaseIndex].projectDescription);
+                                  $('.Portfolio-Content p').css('animation', 'slideInFade ease 300ms 400ms forwards');
+
+                                  $('.Portfolio-Content .Portfolio-CTA').css('opacity', '0');
+                                  $('.Portfolio-Content .Portfolio-CTA').css('animation', 'slideInFade ease 300ms 600ms forwards');
+
+                                  $('.Portfolio-background').css('background-image', 'url('+showcase[showcaseIndex].projectImg);
+                                  $(".Portfolio-Content .link").attr("href", showcase[showcaseIndex].projectHref);
+                                  $('#loneA').attr('href', 'AdriansCaterers_WebsiteManual.pdf');
+                          }, 900)
+
+
+                          }
+
+                      }); // End Right Arrow Clicking Function
+
+</script>
+<script type="text/javascript" src="script.js"></script>
 <script src="three.r95.min.js"></script>
 <script src="vanta.waves.min.js"></script>
 <script>
-VANTA.WAVES({
-  el: "#pdp-page",
-  mouseControls: true,
-  touchControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x0,
-  shininess: 3.00,
-  waveSpeed: 0.55,
-  zoom: 1.53
-})
-
+    VANTA.WAVES({
+      el: "#",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0,
+      shininess: 150.00,
+      waveHeight: 40.00,
+      waveSpeed: 0.05,
+     zoom: 1.41
+    })
 </script>
+</body>
 </html>

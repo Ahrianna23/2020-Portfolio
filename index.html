@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <title>Ahrianna Daniels</title>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
 <link rel="stylesheet" href="css/index.css" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&display=swap" rel="stylesheet">
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
@@ -21,7 +25,7 @@
   <!-- Main Container -->
   <div class="container main">
     <header id="content">
-        <a href="index.html"><div class="logo"><img src="images/Ahri-logo-icon-black-rgb.svg"></div></a>
+        <a href="index.html"><div class="logo"><img src="images/Ahri-logo-icon-white-rgb.svg"></div></a>
         <div class="menu-container">
           <!-- Hamburger Icon
             <p id="menu-txt">Menu</p>
@@ -35,88 +39,81 @@
         </div> <!-- End Menu Container -->
 
         <div class="navbar">
-            <a href="#about" class="links"><div id="nav1">About Ahri</div></a>
+            <p class="nav-message"> Lets Build Together, How can I help?</p>
+            <a href="#about" class="links" id="first-nav"><div id="nav1">About Ahri</div></a>
             <a href="#portfolio" class="links"><div id="nav2">Portfolio</div></a>
             <a href="#contact" class="links"><div id="nav3">Contact</div></a>
+
         </div><!-- End Navbar -->
 
    </header><!-- End Header -->
     <!-- Section Class used for all sections on the page (Hero, Portfolio, About, Contact) -->
     <div class="section hero" id="page">
       <div class="hero-section-divider">
-        <h1> hi, I'm Ahrianna</h1>
-        <!-- <h3> Software Developer</h3> -->
-        <p class="abt-sty">
-          Junior Software Developer currently investing my time in building front end web applications and IOS applications. Skills I use most are <br />
-          <span class="skills">HTML5 & CSS3</span>, <span class="skills">Javascript</span>, <span class="skills">JQuery</span>, <span class="skills">Bootstrap</span>, <span class="skills">Swift & Xcode</span>, <span class="skills">JSON</span>, & <span class="skills">Firebase</span>
-          </p>
+        <h1 id="Name"> Hi, I'm <span class="name">Ahrianna Daniels</span></h1>
+        <!-- <div id="test"> Software Developer</div> -->
+        <p class="phrase"> I Strive To Build Amazing Applications </p>
+        <p id="job-title"> Junior Software Developer</p>
         <div class="cta-container">
           <a href="#"> <div class="cta first-cta-mobile"> <p>View Projects</p> </div> </a>
 
           <a href="#"> <div class="cta cta-margin-left"> <p>About Ahri</p> </div> </a>
         </div>
+        <div class="scroll-container">
+          <p> View Projects</p>
+          <img id="scroll-indicator" src="images/scroll-icon.svg">
+        </div>
       </div>
 
       <!-- <div class="hero-section-divider">
 
-      </div>
-     -->
 
+      </div> -->
     </div>
 
     <!-- Portfolio Section -->
     <div class="section portfolio" id="portfolio">
-      <div class="portfolio-block">
       <h2 id="Portfolio-Header">Portfolio</h2>
-      <div class="portfolio-section-divider dark-side border-left">
-         <h2>Organika</h2>
-         <p>Organika is my a project I am currently working on. The idea behind the app is to create a platform where people can grow and sell their own produce to those looking for that freshness produce. The app will feature a shop, messaging, and an integrated map of what's growing around you!</p>
-         <p><b>Skills Used:</b> Swift, Xcode, JSON, Firebase</p>
-         <div class="project-cta-container">
-           <a href="#"> <div class="portfolio-cta no-left-margin"> Live Project </div> </a>
-           <a href="#"> <div class="portfolio-cta float-right"> View Code </div> </a>
+      <div class="portfolio-block">
+
+       <div class="portfolio-card" id="p1">
+          <a href="portfolio.html" class="plp-links">
+           <div class="portfolio-card-overlay plp-item" id="1">
+             <h2>Adrian's Caterers</h2>
+             <p>Catering Restaurant</p>
+           </div>
+          </a>
+       </div>
+
+       <div class="portfolio-card" id="p2">
+         <a href="portfolio.html" class="plp-links">
+         <div class="portfolio-card-overlay plp-item" id="2">
+           <h2>InspiringNJ</h2>
+           <p>Medical Transport Company</p>
          </div>
-       </div><!-- End of Section Divider -->
-       <div class="portfolio-section-divider">
-         <img src="images/iphone_mockup.png" class="portfolio-image">
-       </div> <!-- End of Section Divider -->
+         </a>
+       </div>
      </div> <!-- End of Portfolio Block -->
 
-     <div class="portfolio-block">
+       <div class="portfolio-block">
 
-     <div class="portfolio-section-divider pad-right dark-side border-right">
-        <h2>Adrian's Caterers</h2>
-        <p>Adrian’s Caterers was a freelance project completed for a catering business(Adrian’s Caterers). Client received a business plan, logo redesign, brand redesign, and a fully functioning responsive website. Per request, I included an interactive timeline on the about page made from scratch. Along with other assets, I created a website manual for the owner, which can be found here. Feel free to check out the website yourself</p>
-        <p><b>Skills Used:</b> HTML5, CSS3, Javascript, PHP, Adobe Creative Suite</p>
-        <div class="project-cta-container">
-          <a href="#"> <div class="portfolio-cta no-left-margin"> Live Project </div> </a>
-          <a href="#"> <div class="portfolio-cta float-right"> View Code </div> </a>
+        <div class="portfolio-card" id="p3">
+          <div class="portfolio-card-overlay">
+            <h2>FrontEnd Mentor</h2>
+            <p>Udemy Course Project</p>
+          </div>
         </div>
-      </div><!-- End of Section Divider -->
-      <div class="portfolio-section-divider">
-        <img src="images/ResponsiveMockup.png" class="portfolio-image">
-      </div> <!-- End of Section Divider -->
-    </div> <!-- End of Portfolio Block -->
 
-    <div class="portfolio-block">
+        <div class="portfolio-card" id="p4">
+          <div class="portfolio-card-overlay">
+            <h2>iGames</h2>
+            <p>Mock Gaming Company</p>
+          </div>
+        </div>
+      </div> <!-- End of Portfolio Block -->
 
-    <div class="portfolio-section-divider dark-side border-left">
-       <h2>Project Title</h2>
-       <p>Project Description ... Some text</p>
-       <p><b>Skills Used:</b> Skill 1, Skill 2 etc...</p>
-       <div class="project-cta-container">
-         <a href="#"> <div class="portfolio-cta no-left-margin"> Live Project </div> </a>
-         <a href="#"> <div class="portfolio-cta float-right"> View Code </div> </a>
-       </div>
-     </div><!-- End of Section Divider -->
-     <div class="portfolio-section-divider">
-       <img src="images/ResponsiveMockup.png" class="portfolio-image">
-     </div> <!-- End of Section Divider -->
-    </div> <!-- End of Portfolio Block -->
-
-    <div class="portfolio-block-end">
-      <a href="#"> <div class="portfolio-cta"> View More Projects </div> </a>
-    </div>
+    <!-- View more button -->
+    <!-- <div class="portfolio-block-end"> <a href="#"> <div class="portfolio-cta"> View More Projects </div> </a> </div> -->
     </div>
     <!-- About Section -->
     <div class="section about" id="about">
@@ -166,22 +163,118 @@
 
 
   </div><!-- End of Main Container -->
-  <script type="text/javascript" src="script.js"></script>
-  <script src="three.r119.min.js"></script>
-  <script src="vanta.net.min.js"></script>
-  <script>
-  VANTA.NET({
-    el: "#page",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0xCCC9D3,
-    backgroundColor: 0xEFE8EE
-  })
-  </script>
+<script>
+      //Fade Effect//
+      if($('.container').css("display", "none")){   $('.container').fadeIn(1000); };
+      $('.hero-section-divider h1').css('animation', 'slideInFadeLeft ease 500ms 800ms forwards');
+      $('.hero-section-divider p').css('animation', 'slideInFadeRight ease 1000ms 1000ms forwards');
+      $('.cta-container').css('animation', 'slideUpInFade ease 1500ms 1700ms forwards');
+
+      $('.cta-container').fadeIn(3000);
+
+      var expanded = false;
+      var header = document.getElementById("content");
+      $('#menu-icon').click(function() {
+          var menuLines = document.getElementsByClassName('menu-line');
+          for (var i = 0; i < menuLines.length; i++){
+            if (i === 0) {
+              menuLines[i].classList.toggle("menuLineOne");
+            }
+            else if (i === 2){
+              menuLines[i].classList.toggle("menuLineThree");
+            }
+            else if (i === 1) {
+              menuLines[i].classList.toggle("menuLineTwo");
+            }
+          }
+          header.classList.add("content-transform");
+          function switchMenu() {
+            header.classList.remove("content-transform");
+          }
+          $('.menu-line').css('background', '#fff');
+          $('.navbar').slideDown();
+          setTimeout(checkStatus, 200);
+          function checkStatus(){
+              if(expanded === false) {
+                  expand();
+              }
+              else {
+                  $('#nav1').css('animation', 'collapse ease 200ms forwards');
+                  $('#nav2').css('animation', 'collapse ease 200ms forwards');
+                  $('#nav3').css('animation', 'collapse ease 200ms forwards');
+                  setTimeout(collapse, 300);
+                  function collapse() {
+                      $('.navbar').slideUp();
+                      document.getElementById('nav1').style.animation = '';
+                      document.getElementById('nav2').style.animation = '';
+                      document.getElementById('nav3').style.animation = '';
+                      setTimeout(switchMenu, 300);
+                  }
+
+                  expanded = false;
+              }//end else
+          }//End check status
+       });
+          var i = 0,
+          loopXTimes = 4;
+
+      function expand() {
+
+          var navName = '#nav';
+          var delay = 200;
+
+          i++;
+          if(i < loopXTimes){
+              delay += 100;
+              navName += i;
+                  $(navName).css('animation', 'expand ease 500ms forwards');
+                  //$(navName).css('animation-delay', delay +'ms');
+                  setTimeout(expand, 100);
+
+          } else {i = 0;}
+          expanded = true;
+      };
+
+      $('.plp-links').click(function() {
+        $('.portfolio-card-overlay').css('opacity', '0');
+        $('#p1').css('animation', 'slideOutFadeLeft ease 1000ms 100ms forwards');
+        $('#p2').css('animation', 'slideOutFadeRight ease 1000ms 100ms forwards');
+        $('#p3').css('animation', 'slideOutFadeLeft ease 1000ms 100ms forwards');
+        $('#p4').css('animation', 'slideOutFadeRight ease 1000ms 100ms forwards');
+        $('.container').fadeOut(1000);
+        var href = $(this).attr('href');
+        setTimeout(function() {window.location = href}, 1100);
+return false;
+       $('.container').css("display", "none")
+      });
+
+      var plplinks = document.getElementsByClassName('plp-item');
+      for (var i = 0; i < plplinks.length; i++) {
+        plplinks[i].addEventListener('click', function() {
+          localStorage.index = this.id;
+        });
+      }
+
+</script>
+<script type="text/javascript" src="script.js"></script>
+<script src="three.r95.min.js"></script>
+<script src="vanta.waves.min.js"></script>
+<script>
+    VANTA.WAVES({
+      el: "#",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x0,
+      shininess: 150.00,
+      waveHeight: 40.00,
+      waveSpeed: 0.05,
+     zoom: 1.41
+    })
+</script>
 </body>
 </html>
