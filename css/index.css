@@ -4407,7 +4407,7 @@ border-left: none;
     color: #D1603D;
     float: left;
     width: 90%;
-    height: 30vh;
+    height: 25vh;
     margin: 0;
     margin-right: 10%;
     font-size: 3em;
@@ -4415,6 +4415,7 @@ border-left: none;
     font-family: 'Kanit', sans-serif;
     font-weight: bolder;
     transition: all ease 300ms;
+
   }
   #first-nav {
      margin-top: 15vh;
@@ -4463,12 +4464,13 @@ border-left: none;
     height: 100vh;
     margin: 0;
     box-sizing: border-box;
-    opacity: .3;
+    opacity: .5;
     font-size: 5em;
     font-family: 'Kanit', sans-serif;
-    line-height: 135%;
+    line-height: 115%;
     font-weight: 700px;
     padding: 5%;
+    z-index: -1;
     color:#221D23;
   }
   /* Test Section sizing with colors*/
@@ -4594,10 +4596,10 @@ border-left: none;
   .about-section-divider:nth-child(1) { width: 100%; }
   .about-section-divider h3 {
     font-family: 'Ubuntu', sans-serif;
-    color:#fff;
+    color:rgba(208, 227, 127, 1);
     text-align: center;
     font-size: 2em;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
   .about-section-divider h5 {
     font-family: 'Ubuntu', sans-serif;
@@ -4617,7 +4619,7 @@ border-left: none;
     font-weight: 300;
     margin: 0;
     font-size: 1em;
-    line-height: 130%;
+    line-height: 150%;
     box-sizing: border-box;
     float: left;
   }
@@ -4668,7 +4670,6 @@ border-left: none;
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    border: 1px solid #473144;
     margin-top:15%;
     /* box-shadow: 5px 10px 18px #888888; */
   }
@@ -4955,7 +4956,7 @@ border-left: none;
     width: 100%;
     min-height: 300px;
     float: left;
-    padding-right: 20px;
+    padding-right: 0px;
     padding-top: 40px;
     box-sizing: border-box;
   }
@@ -4978,22 +4979,22 @@ border-left: none;
 
   }
   .contact-details-divider {
-    width:50%;
+    width:55%;
     height: 100px;
     box-sizing: border-box;
-    padding: 15px 15px 15px 0;
+    padding: 15px 0 15px 0;
     float: left;
   }
   .contact-details-divider:nth-child(2) {
-    width:50%;
+    width:45%;
     height: auto;
     box-sizing: border-box;
-    padding: 15px 15px 15px 10%;
+    padding: 15px 0 15px 3%;
     float: left;
   }
   .contact-details-divider  a div p {
     float: left;
-    padding: 0 5px;
+    padding: 0 0;
     text-align: center;
   }
   .contact-details-container h4 {
@@ -5039,8 +5040,8 @@ border-left: none;
   }
   .contact-image {
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     margin-top:0%;
     margin-left: 0%;
     float: left;
