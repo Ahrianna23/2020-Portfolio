@@ -4693,7 +4693,7 @@ border-left: none;
     margin:0 0 2% 0;
   }
   /* Set the background images */
-  #p1 { background-image: url("../images/AhriDaniels-plp-Adrians.jpeg"); background-size: contain;; background-repeat: no-repeat;}
+  #p1 { background-image: url("../images/AhriDaniels-plp-Adrians.jpeg"); background-size: cover; background-repeat: no-repeat;}
   #p2 { background-image: url("../images/AhriDaniels-InspiringNJ.png"); background-size: cover; background-repeat: no-repeat;}
   #p3 { background-image: url("../images/AhriDaniels-FeaturesLP.png"); background-size: cover; background-repeat: no-repeat;}
   #p4 { background-image: url("../images/AhriDaniels-iGames.png"); background-size: cover; background-repeat: no-repeat;}
@@ -4979,14 +4979,14 @@ border-left: none;
 
   }
   .contact-details-divider {
-    width:55%;
+    width:50%;
     height: 100px;
     box-sizing: border-box;
     padding: 15px 0 15px 0;
     float: left;
   }
   .contact-details-divider:nth-child(2) {
-    width:45%;
+    width:50%;
     height: auto;
     box-sizing: border-box;
     padding: 15px 0 15px 3%;
