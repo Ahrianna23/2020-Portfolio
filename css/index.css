@@ -2833,17 +2833,17 @@ border-left: none;
     color: #D1603D;
     float: left;
     width: 40%;
-    height: 30vh;
+    height: 15vh;
     margin: 0;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: right;
     font-family: 'Kanit', sans-serif;
     font-weight: bolder;
     transition: all ease 300ms;
   }
   #first-nav {
-     margin-top: 9vh;
+     margin-top: 25vh;
   }
   .navbar a:hover {
     color: #D0E37F;
@@ -2888,15 +2888,15 @@ border-left: none;
     box-sizing: border-box;
     float: left;
     opacity: .3;
-    font-size: 5.5em;
+    font-size: 5em;
     font-family: 'Kanit', sans-serif;
-    line-height: 100%;
+    line-height: 120%;
     font-weight: 700px;
     padding: 5%;
     color:#221D23;
   }
   /* Test Section sizing with colors*/
-  .hero { padding: 2% 5% 0; box-sizing: border-box; height: 100%; max-height: 700px; background: #000; position:relative;}
+  .hero { padding: 10% 5% 0; box-sizing: border-box; height: 100%; max-height: 700px; background: #000; position:relative;}
 
   /* Hero Styling */
   .hero-section-divider {
@@ -2912,7 +2912,7 @@ border-left: none;
   .hero h1, #job-title {
     font-family: 'Ubuntu', sans-serif;
     margin-top: 15vh;
-    font-size: 3.5em;
+    font-size: 2em;
     text-align: center;
     opacity: 0;
     margin-bottom: 0;
@@ -2926,7 +2926,7 @@ border-left: none;
     }
     #job-title {
       margin-top: 0;
-      font-size: 3em;
+      font-size: 2em;
     }
   .phrase {
     height: auto;
@@ -2940,7 +2940,7 @@ border-left: none;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 3.5em;
+    font-size: 2.5em;
     line-height: 150%;
     box-sizing: border-box;
   }
@@ -2994,6 +2994,7 @@ border-left: none;
    transition: all ease 300ms;
 
  }
+
  .cta-margin-left{
    margin-left: 30px;
  }
@@ -3741,8 +3742,11 @@ border-left: none;
    float: left;
    width: 500px;
    opacity: 0;
-   margin-left: 20%;
+   margin-left: 23%;
  }
+ /* .first-cta-mobile {
+   margin-left: 20%;
+ } */
  .scroll-container {
    width: 100%;
    display: none;
